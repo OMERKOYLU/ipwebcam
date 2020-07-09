@@ -1,0 +1,44 @@
+{
+  "name": "ipwebcam",
+  "version": "1.0.0",
+  "description": "ipwebcam uygulaması",
+  "main": "main.js",
+  "scripts": {
+    "postinstall": "electron-builder install-app-deps",
+    "start": "electron .",
+    "build": "electron-packager . ipwebcam --platform linux --arch x64 --out dist/",
+    "build-win":"electron-packager . ipwebcam --platform win32 --arch x64 --out dist/",
+    "winstaller":"electron-installer-windows --src dist/ipwebcam-win32-x64/ --dest dist/installers/",
+    "deb64": "electron-installer-debian --src dist/ipwebcam-linux-x64/ --dest dist/installers/ --arch amd64 --config debconfig.json",
+    "pack-win": "electron-builder --dir",
+    "dist-win": "electron-builder"
+  },
+  "keywords": [
+    "akıllı",
+    "telefon",
+    "webcam",
+    "kamera"
+  ],
+  "author": "Ömer KÖYLÜ",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^6.0.4",
+    "electron-builder": "^21.2.0"
+  },
+  "dependencies": {
+    "yarn": "^1.17.3"
+  },
+  "build": {
+    "appId": "com.ipwebcam.application",
+    "win": {
+      "target": [
+        "msi"
+      ],
+      "icon": "./icons/appicon.ico",
+      "publisherName": "Ömer KÖYLÜ"
+    },
+    "sources": [
+      "./sources/**"
+    ]
+  }
+}

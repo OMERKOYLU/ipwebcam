@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>IP WebCam Application</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='start.js'></script>
+</head>
+<body>
+    <div class="modal">
+        <img id="goruntu" src="" />
+    </div>
+    <div id="clickArea" onclick="selectCam()">&nbsp;</div>
+    <div class="select-cam" id="thumbs">
+        <div class="thumbs">
+        <img id="cam1" class="notSelected" src="./notfound.png" onclick="changeID(0)"/>
+        <img id="cam2" class="notSelected" src="./notfound.png" onclick="changeID(1)"/>
+        <img id="cam3" class="notSelected" src="./notfound.png" onclick="changeID(2)"/>
+        <img id="cam4" class="notSelected" src="./notfound.png" onclick="changeID(3)"/>
+        </div>
+        <button onclick="configure()">Configure</button>
+    </div>
+    <div class="splash" id="loading" >Loading...</div>
+</body>
+</html>

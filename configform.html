@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='config.css'>
+    <script src='./config.js'></script>
+</head>
+<body>
+    <div class="outer"><div class="inner">
+        <label class="radio-inline">
+        <input type="radio" id="cam1" name="cam" onclick="setValues(0)" value=">Cam 1:"><label for="cam1">Camera 1</label>
+        <input type="radio" id="cam2" name="cam" onclick="setValues(1)" value=">Cam 2:"><label for="cam2">Camera 2</label>
+        <input type="radio" id="cam3" name="cam" onclick="setValues(2)" value=">Cam 3:"><label for="cam3">Camera 3</label>
+        <input type="radio" id="cam4" name="cam" onclick="setValues(3)" value=">Cam 3:"><label for="cam3">Camera 4</label>
+        </label>
+        <label class="inputLabel">IP Address:</label><input id="ip" type="text" />
+        <label class="inputLabel">Port Number:</label><input id="port" type=text />
+        <button id="kaydetButon" onclick="save()">SAVE</button>
+        </div>
+    </div>
+</body>
+</html>

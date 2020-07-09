@@ -1,0 +1,10 @@
+{
+    "dest": "dist/installers/",
+    "icon": "icons/appicon.ico",
+    "categories": [
+      "Utility"
+    ],
+    "lintianOverrides": [
+      "changelog-file-missing-in-native-package"
+    ]
+  }
