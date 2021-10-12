@@ -22,7 +22,7 @@
   "author": "Ömer KÖYLÜ",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^7.2.4",
+    "electron": "^11.5.0",
     "electron-builder": "^21.2.0"
   },
   "dependencies": {
